@@ -1,0 +1,75 @@
+nav{
+    background-color: black; 
+}
+.who-am-i{
+    background-color: #1d1d1f;
+    padding: 100px;
+}
+.name{
+    font-weight: 700;
+}
+
+.title-intro{
+    background-color: #105EAB;
+    padding: 3px;
+    color: white;
+    margin-bottom: 20px;
+}
+#intro{
+
+    color: white;
+    font-size: 19px;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    //margin: 3% 20% 0% 30%;
+}
+
+#who-am-i-title{
+    color: white;
+    font-size: 48px;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#skills-details{
+    margin: 3vh 10vh 0 9vh;
+}
+.skills{
+    background-color: #ececec;
+    font-size: 15px;
+}
+.skills #skills-title{
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#skills-title{
+    font-size: 48px;
+    color: #1d1d1f;
+}
+.formation{
+    background-color: #1d1d1f;
+    color: white;
+    height: 56vh;
+}
+.skills{
+    height: 56vh;
+}
+#formation-title{
+    font-weight: 700;
+}
+#formation-table{
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+tr{
+border-bottom: 1px white solid;
+}
