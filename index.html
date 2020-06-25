@@ -14,23 +14,13 @@
   <script src="static/script.js"></script>
 </head>
 <body>
-   <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav> 
   <div class="row title-intro">
     <h2 class="center name">Mourad Inan</h2>
     <h3 class="center name">Data Scientist</h3>
   </div>
   <div class="row who-am-i">
     <div class="col m6 col s6">
-      <img src="static/bg.png">
+      <img width="500" src="static/mourad_i.jpg">
     </div>
     <div class="col m6 col s6" id="who-am-i">
       <h3 class="center" id="who-am-i-title">Who Am I?</h3>
@@ -39,8 +29,8 @@
       I am very interesting about data science research and mathematics. Finally, I have some crypto-currencies in my wallet. </p>
     </div>
   </div>
-    <div class="row"> 
-      <div class="skills col m6">
+    <div class="row" >
+      <div class="skills col m6" style="padding: 0 2.75rem !important;">
         <h3 class="center" id="skills-title">Skills</h3>
         <ul id="skills-details">
           <li><p><strong>Machine Learning</strong>: Supervised / Unsupervised learning, Theoretical machine learning (PAC and EML)</p></li>
@@ -88,7 +78,232 @@
         </table> 
 
      </div>
-    </div>
 
-</body>
+    </div>
+    <div class="row cells" id="game-div">
+      <h2 class="center">Play With Me!</h2>
+      <p class="center"> <i>choose one keyword: [born, study, work-study, projects, qualities, defaults, passions], write it and execute your code !</i>  </p>
+      <div class="container">
+        <div class="row center">
+          <div class="col md 1">
+            <p style="margin-top: 20px">Entrée [  ]</p>
+          </div>
+          <div class="col md 8 input-field col s8">
+            <input class="input-lg" type="text" name="game" id="game1" style="background-color: #f7f7f7" >
+          </div>
+          <div class="col md 3">
+            <button class="btn btn-submit create" type="submit" id="game-button1" style="margin-top:20px">Execute</button>
+          </div>
+        </div>
+        <div id="display1" class="row">
+        </div>
+
+      </div>
+
+    </div>
+   <footer id="contact">
+     <div class="row">
+       <div class="contact" style="margin-left: 70vh;">
+         <div class="col md 3">
+           <a href="https://github.com/MouradInan"><img src="static/GitHub-Mark-32px.png"> </a>
+         </div>
+         <div class="col md 3">
+           <a href="https://www.linkedin.com/in/mourad-inan-4b453a107/"><img width="32" height="32" src="static/linkedin.png"> </a>
+         </div>
+         <div class="col md 3">
+          <a href="mailto:mourad.inan@hotmail.fr"><img width="32" height="32" src="static/mail.png"> </a>
+         </div>
+        </div>
+      </div>
+   </footer>
+</body>       
+<script>
+  var counter = 1;
+
+    $(document).on('click', '.create',  function (evt) {
+      $('#display'+ counter).empty();
+      $('#display'+ counter).css('border', '1px solid black');
+        var wanted = $('#game'+counter).val();
+        var html = "" ;
+        switch (wanted) {
+          case "help":
+            html += "<p>choose one keyword: [born, study, work-study, projects, qualities, defaults, passions], write it and execute your code !</p>";
+            break;
+          case "born":
+            html += "<p>" +
+                    "I was born in Béziers, Hérault at 9 am the 9 August 1997." +
+                    "</p>";
+            break;
+          case "study":
+            html += "<p>" +
+                    "After my highschool, I would wanted to continue to medicine university but\n" +
+                    "after hesitation with myself I'll continue to Computer Science UIT. These 2 years were very cool, I was the event organisator of our department and I organize a well-passed ski travel. (I also luxated my shoulder...)\n"  +
+                    "I have learned very nice skills like programming, project handling with agile methods like SCRUM." +
+                    " At this time, I wanted to go to security domain, I liked a lot pentesting and finding failures on websites. \n" +
+                    "However, I have continued to a 3rd year in Computer science. I have chosen to continue because I estimated I have yet to learn and of course this is the main way to continue to master degree." +
+                    " In parallel, I have also organized a tiny travel to Istanbul with my friends. This travel have been so exciting. \n" +
+                    "\n" +
+                    "After, 3rd year concluded, I have hesitated between Security domain and Data science domain. Oh that was very difficult for me. Finally, I have chosen Data science domain (I should say 'the 21st sexiest job' convince me"+
+                    "I have decided to to MIASHS master at Montpellier. Why ? It based at Montpellier," +
+                    " I have done all my studies at Montpellier and it is a work-study, which brings us a helpful experience in real world.</p> "
+            break;
+          case "work-study":
+            html += "<p> I have begun my work-study at EDF Commerce inside of IT department. EDF is an electric-utility company very famous in France (the hugest company in this domain)." +
+                    " I would do 2 weeks in university and 2 weeks in company. I have begun my work-study with very interesting project. It was a migration of monolith application to micro-services. The interest of this project was improve sharing data and the maintainability. " +
+                    "I have learned a lot with this project. Firstly, I improve my IT skills with a lot of manipulating systems and environments and my human skills like communication and project management with applicating agile methodology. After this project, " +
+                    "I continued my work-study with doing some machine learning on time series. The billing team of IT department wanted to improve their bill flow estimation and like a super hero I introduce my data scientist skills to help them to reach their objective." +
+                    " I implemented an online machine learning algorithm which forecast the billing flow with a 7 days horizon. \n" +
+                    "This project is very interesting for me because of course I learned a lot on time series and the forecasting process but I created very cool relation with billing team.\n" +
+                    "​\n" +
+                    "What I have appreciated in this work-study is the variety of projects, I could doing machine learning on time series and after changing to implementation of an agenda for another team." +
+                    " This variety brings me a lot. </p>";
+            break;
+          case "projects":
+            html += "<p>In parallel, I realized a lot personal projects:\n" +
+                    "- TweetoBuzz: Given a tweet, we predict the buzz evolution in 24h. Retrieve tweets online, creation of dataset, fit and predict.\n" +
+                    "- TweetoStats: Creation of insights on tweets retrieved with keywords. (words cloud) Repository: https://github.com/Haytu/app-python-analyse-tweets\n" +
+                    "- PoliTweets: Textual analysis master 1 project. With six other students, I implemented Bayesian naive Classifier on politician tweets for predicting political orientation of users by only analyse their tweets.\n" +
+                    "- User Segmentation: User Segmentation pipeline using PySpark on MovieLens data: https://github.com/MouradInan/UserSegmentationWithPySpark\n" +
+                    "- Fraud Detection: Fraud detection on stream data using PySpark: https://github.com/MouradInan/PysparkStreamExample\n" +
+                    "- Dashboard on Covid19: Evolution of Covid19 in France represented by graphics: https://github.com/MouradInan/CoronaDash\n" +
+                    "- Credit Card Default Prediction: https://github.com/MouradInan/NotebookCreditCardDefaultPaymentPrediction\n" +
+                    "- Master MIASHS Insights: https://mouradinan.github.io/master_miashs_insights/projet_ggplot.html\n" +
+                    "- Deep network Master challenge: I participated to deep network challenge and we reach the top 3 of our class. (Prediction of redshift of stars, based on star images).\n"+
+                "</p>";
+            break;
+
+          case "qualities":
+            html += "<p>I defined myself as a Swiss Knife and my qualities are: Communication, autonomy, innovative, bug finder, serious, hard worker, passionate and very cheerful and optimist.</p>"
+            break;
+          case "defaults":
+            html+= "<p>I think I am a little arrogant and disorganized.</p>";
+            break;
+
+          case "passions":
+            html += "<p>I like video games, japanese animes, Japan for their culture, travel, football. I like also Data science, I read often books on Data science, system security (blockchain and pentesting) and crypto-currencies. </p>";
+
+            break;
+
+          default:
+            html += "<p>choose one keyword: [born, study, work-study, projects, qualities, defaults, passions], write it and execute your code !</p>";
+            break;
+        }
+        $("#display"+counter).append(html);
+  
+  });
+
+
+
+
+
+
+     $('#game'+counter).keypress(function(event) {
+       var keycode = (event.keyCode ? event.keyCode : event.which);
+       if (keycode == '13' && event.shiftKey) {
+
+         create_cell();
+       }
+     });
+  function create_cell(){
+  $('#display'+ counter).empty();
+  $('#display'+ counter).css('border', '1px solid black');
+    var wanted = $('#game'+counter).val();
+    var html = "" ;
+    switch (wanted) {
+      case "help":
+        html += "<p>choose one keyword: [born, study, work-study, projects, qualities, defaults, passions], write it and execute your code !</p>";
+        break;
+      case "born":
+        html += "<p>" +
+                "I was born in Béziers, Hérault at 9 am the 9 August 1997." +
+                "</p>";
+        break;
+      case "study":
+        html += "<p>" +
+                "After my highschool, I would wanted to continue to medicine university but\n" +
+                "after hesitation with myself I'll continue to Computer Science UIT. These 2 years were very cool, I was the event organisator of our department and I organize a well-passed ski travel. (I also luxated my shoulder...)\n" +
+                "I have learned very nice skills like programming, project handling with agile methods like SCRUM." +
+                " At this time, I wanted to go to security domain, I liked a lot pentesting and finding failures on websites. \n" +
+                "However, I have continued to a 3rd year in Computer science. I have chosen to continue because I estimated I have yet to learn and of course this is the main way to continue to master degree." +
+                " In parallel, I have also organized a tiny travel to Istanbul with my friends. This travel have been so exciting. \n" +
+                "\n" +
+                "After, 3rd year concluded, I have hesitated between Security domain and Data science domain. Oh that was very difficult for me. Finally, I have chosen Data science domain (I should say 'the 21st sexiest job' convince me). " +
+                "I have decided to to MIASHS master at Montpellier. Why ? It based at Montpellier," +
+                " I have done all my studies at Montpellier and it is a work-study, which brings us a helpful experience in real world.</p> "
+        break;
+      case "work-study":
+        html += "<p> I have begun my work-study at EDF Commerce inside of IT department. EDF is an electric-utility company very famous in France (the hugest company in this domain)." +
+                " I would do 2 weeks in university and 2 weeks in company. I have begun my work-study with very interesting project. It was a migration of monolith application to micro-services. The interest of this project was improve sharing data and the maintainability. " +
+                "I have learned a lot with this project. Firstly, I improve my IT skills with a lot of manipulating systems and environments and my human skills like communication and project management with applicating agile methodology. After this project, " +
+                "I continued my work-study with doing some machine learning on time series. The billing team of IT department wanted to improve their bill flow estimation and like a super hero I introduce my data scientist skills to help them to reach their objective." +
+                " I implemented an online machine learning algorithm which forecast the billing flow with a 7 days horizon. \n" +
+                "This project is very interesting for me because of course I learned a lot on time series and the forecasting process but I created very cool relation with billing team.\n" +
+                "​\n" +
+                "What I have appreciated in this work-study is the variety of projects, I could doing machine learning on time series and after changing to implementation of an agenda for another team." +
+                " This variety brings me a lot. </p>";
+        break;
+      case "projects":
+        html += "<p>In parallel, I realized a lot personal projects:\n" +
+                "- TweetoBuzz: Given a tweet, we predict the buzz evolution in 24h. Retrieve tweets online, creation of dataset, fit and predict.\n" +
+                "- TweetoStats: Creation of insights on tweets retrieved with keywords. (words cloud) Repository: https://github.com/Haytu/app-python-analyse-tweets\n" +
+                "- PoliTweets: Textual analysis master 1 project. With six other students, I implemented Bayesian naive Classifier on politician tweets for predicting political orientation of users by only analyse their tweets.\n" +
+                "- User Segmentation: User Segmentation pipeline using PySpark on MovieLens data: https://github.com/MouradInan/UserSegmentationWithPySpark\n" +
+                "- Fraud Detection: Fraud detection on stream data using PySpark: https://github.com/MouradInan/PysparkStreamExample\n" +
+                "- Dashboard on Covid19: Evolution of Covid19 in France represented by graphics: https://github.com/MouradInan/CoronaDash\n" +
+                "- Credit Card Default Prediction: https://github.com/MouradInan/NotebookCreditCardDefaultPaymentPrediction\n" +
+                "- Master MIASHS Insights: https://mouradinan.github.io/master_miashs_insights/projet_ggplot.html\n" +
+                "- Deep network Master challenge: I participated to deep network challenge and we reach the top 3 of our class. (Prediction of redshift of stars, based on star images).\n"+
+            "</p>";
+        break;
+
+      case "qualities":
+        html += "<p>I defined myself as a Swiss Knife and my qualities are: Communication, autonomy, innovative, bug finder, serious, hard worker, passionate and very cheerful and optimist.</p>"
+        break;
+      case "defaults":
+        html+= "<p>I think I am a little arrogant and disorganized.</p>";
+        break;
+
+      case "passions":
+        html += "<p>I like video games, japanese animes, Japan for their culture, travel, football. I like also Data science, I read often books on Data science, system security (blockchain and pentesting) and crypto-currencies. </p>";
+
+        break;
+
+      default:
+        html += "<p>choose one keyword: [born, study, work-study, projects, qualities, defaults, passions], write it and execute your code !</p>";
+        break;                                                                                                  
+    }
+    $("#display"+counter).append(html);
+
+    counter++;
+
+
+    var cell ="<div id=\"created"+counter+"\" >\n"+
+            "        <div class=\"row cells\"'>\n" +
+            "          <div class=\"col md 1\">\n" +
+            "            <p style=\"margin-top: 20px\">Entrée [  ]</p>\n" +
+            "          </div>\n" +
+            "          <div class=\"col md 8 input-field col s8\">\n" +
+            "            <input class=\"input-lg\" type=\"text\" name=\"game\" id=\"game"+ counter + "\"  style=\"background-color: #f7f7f7\" >\n" +
+            "          </div>\n" +
+            "          <div class=\"col md 3\">\n" +
+            "            <button class=\"btn btn-submit create\" type=\"submit\" id=\"game-button"+ counter +"\"  style=\"margin-top:20px\">Execute</button>\n" +
+            "          </div>\n" +
+            "          <div class=\"col md 3\">\n" +
+            "            <button class=\"btn btn-error delete\" type=\"submit\" id=\"delete-button"+counter+"\" style=\"margin-top:20px; background-color: #E57373 !important;\">Remove</button>\n" +
+            "          </div>\n" +
+            "        </div>\n" +
+            "        <div id=\"display"+ counter +"\" class=\"row\">\n" +
+            "\n" +
+            "        </div>";
+
+    $('.container').append(cell);
+
+    $("#delete-button"+ counter).on('click', function(evt){
+      $('#created'+counter).remove();
+      counter--;
+    })
+
+  }
+
+</script>
 </html>
