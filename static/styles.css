@@ -83,14 +83,21 @@ nav{
     letter-spacing: -0.015em;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+
+
 tr{
 border-bottom: 1px white solid;
 }
 #game-div{
     border: 5px solid black;
 }
-
-#contact{
+#contact {
     background-color: #9FB8AD;
     height: 50px;
+}
+
+@media (min-width: 1100px) {
+    .contact{
+        margin-left: 70vh;
+    }
 }
